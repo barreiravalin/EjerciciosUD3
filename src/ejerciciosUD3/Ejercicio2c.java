@@ -2,7 +2,7 @@ package ejerciciosUD3;
 
 import java.util.Scanner;
 
-public class Ejercicio3b {
+public class Ejercicio2c {
     
     private static boolean esBisiesto(int año) {
         return (año % 4 == 0)
@@ -34,6 +34,12 @@ public class Ejercicio3b {
         return -1;
     }
     
+    private static boolean esFechaValida(byte dia, byte mes, short año){
+        return mes >= 1 && mes <= 12 &&
+               año != 0 &&
+               dia >= 1 && dia <= getDiasMes(mes, año);
+    }
+    
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         
@@ -41,7 +47,6 @@ public class Ejercicio3b {
         byte mes;
         short año;
         String fecha;
-        boolean esFechaValida = true;
         int id1; // Posición de la barra que separa el día del mes.
         int id2; // Posición de la barra que separa el mes del año.
         /*
@@ -60,10 +65,7 @@ public class Ejercicio3b {
         mes = Byte.parseByte(fecha.substring(id1 + 1, id2));
         año = Short.parseShort(fecha.substring(id2 + 1));
 
-        if (mes < 1 || mes > 12 || año == 0 || dia < 1 || dia > getDiasMes(mes, año))
-            esFechaValida = false;
-        
-        System.out.println((esFechaValida)? "Fecha válida" : "Fecha inválida");
+        System.out.println((esFechaValida(dia, mes, año))? "Fecha válida" : "Fecha inválida");
     }
 
 }
