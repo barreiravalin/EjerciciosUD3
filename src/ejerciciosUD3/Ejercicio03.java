@@ -2,7 +2,7 @@ package ejerciciosUD3;
 
 import java.util.Scanner;
 
-public class Ejercicio3 {
+public class Ejercicio03 {
 
     private static boolean esEquilatero(int a, int b, int c){
         return a == b && b == c;

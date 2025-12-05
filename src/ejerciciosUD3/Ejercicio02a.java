@@ -2,7 +2,7 @@ package ejerciciosUD3;
 
 import java.util.Scanner;
 
-public class Ejercicio2a {
+public class Ejercicio02a {
 
     private static boolean esBisiesto(int año) {
         return (año % 4 == 0)

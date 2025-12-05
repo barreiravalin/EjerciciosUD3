@@ -2,7 +2,7 @@ package ejerciciosUD3;
 
 import java.util.Scanner;
 
-public class Ejercicio7 {
+public class Ejercicio07 {
 
     private static boolean esHoraValida(byte h, byte m, byte s){
         return h >= 0 && h <= 23 &&

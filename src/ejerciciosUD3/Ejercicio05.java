@@ -2,7 +2,7 @@ package ejerciciosUD3;
 
 import java.util.Scanner;
 
-public class Ejercicio5 {
+public class Ejercicio05 {
     
     private static double getPorcentaje(String texto, char c){
         int contador = 0;

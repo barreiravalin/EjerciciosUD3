@@ -2,7 +2,7 @@ package ejerciciosUD3;
 
 import java.util.Scanner;
 
-public class Ejercicio8 {
+public class Ejercicio08 {
     
     private static int getLongitud(int n){
         int longitud = 0;

@@ -2,7 +2,7 @@ package ejerciciosUD3;
 
 import java.util.Scanner;
 
-public class Ejercicio4 {
+public class Ejercicio04 {
 
     private static boolean esVocal(char letra) {
         if (letra >= 'A' && letra <= 'Z')
